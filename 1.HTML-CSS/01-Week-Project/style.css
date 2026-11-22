@@ -1,0 +1,351 @@
+* {
+  box-sizing: border-box; 
+  margin: 0; 
+  padding: 0; 
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif; 
+  color: #2d2f31;
+  font-size: 14px; 
+  background: white; 
+}
+
+header{
+    height: 72px;
+    width: 100%;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #d1d7dc;
+
+}
+.logo{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 12px;
+}
+
+.logo  img{
+    width: 94px;
+    height: 34px;
+}
+
+.text-btn,
+.icon-btn,
+.login,
+.signup{
+    border: 0px;
+    background: transparent;
+    cursor: pointer;
+    white-space: nowrap;
+    font: 14px;
+}
+.text-btn{
+    padding: 12px 4px;
+}
+.text-btn:hover{
+    color:#5624d0;
+}
+.search{
+    flex:1;
+    width: 650px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0 16px;
+    border: 1px solid #2d2f31;
+    border-radius: 24px;
+}
+
+.search svg{
+    width: 20px;
+    height: 20px;
+    fill: none;
+    stroke: #2d2f31;
+    stroke-width: 2px;
+}
+
+.search input{
+    width: 100%;
+    border: 0;
+    background: transparent;
+    font:14px;
+    outline: 0;
+}
+
+.icon-btn{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid transparent;
+}
+
+.icon-btn svg{
+    width: 24px;
+    height: 24px;
+    fill: none;
+    stroke: #5624d0;
+    stroke-width: 2px;
+}
+
+.login,
+.signup{
+    height: 40px;
+    min-width: 78px;
+    border: 1px solid #5624d0;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+.login{
+    color: #5624d0;
+    background-color: white;
+}
+
+.signup{
+    background-color: #5624d0;
+    color: white;
+
+}
+.globe{
+    border: 1px solid #5624d0;
+    border-radius: 5px;
+}
+@media screen and (max-width:1080px) {
+.udemy-business,
+.teach{
+    display: none;
+}    
+}
+
+@media (max-width:700px){
+    .header{
+        height: 64px;
+        padding: 0 16px;
+    }
+    .logo{
+        margin-right: auto;
+    }
+    .text-btn,
+    .icon-btn,
+    .login,
+    .signup{
+        display: none;
+    }
+
+    .search{
+        max-width:48px;
+        height:48px;
+        flex : 0 0 48px;
+        justify-content: center;
+        margin-left: auto;
+    }
+
+    .search input{
+        display: none;
+    }
+}
+
+.hero{
+    width: 100%;
+    position: relative;
+}
+
+.hero img{
+    display: block;
+    width: 98%;
+    margin: 0 auto;
+    height: auto;
+}
+
+.hero-inbox{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 35%;
+    padding: 20px;
+    background-color: white;
+}
+
+.hero-inbox h1{
+    font-size: 28px;
+    line-height: 1.15;
+}
+
+.hero-inbox p{
+    font-size: 14px;
+    line-height: 1.35;
+}
+
+.hero-inbox button{
+    align-self: self-start;
+    padding: 10px 14px;
+    border : 0 ;
+    border-radius: 5px;
+    background: #5624d0;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.hero-inbox button:hover{
+    background-color: #892de1;
+}
+
+
+.courses{
+    width: 1280px;
+    padding: 48px auto ;
+    padding: 0 24px;
+}
+
+.courses h1{
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.course-grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+.course-card{
+    flex: 1 1 22%;
+    min-width: 220px;
+    height: 390px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #d1d7dc;
+    overflow: hidden;
+}
+
+.course-card img{
+    display: block;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.course-info{
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+    padding: 12px;
+    flex:1;
+}
+
+.course-info h3{
+    font-size: 16px;
+    line-height: 1.3;
+}
+
+.course-info p,
+.course-info small{
+    color: #6a6f73;
+    line-height: 1.4;
+}
+
+.course-info strong{
+    color: #2d2f31;
+}
+
+.course-info strong span{
+    font-weight:400 ;
+}
+
+footer{
+  margin-top: 48px; 
+  padding: 32px 5%; 
+  background: #2d2f31;
+  color: white; 
+}
+
+.footer-content {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: flex-start;
+  gap: 24px; 
+}
+
+.footer-links {
+  display: flex; 
+  gap: 60px;
+}
+
+.footer-links div {
+  display: flex; 
+  flex-direction: column; 
+  gap: 12px; 
+}
+
+.footer-links a {
+  color: white; 
+  font-size: 14px; 
+  text-decoration: none; 
+}
+
+.footer-links a:hover {
+  text-decoration: underline; 
+}
+
+.footer-language {
+  padding: 10px 24px; 
+  border: 1px solid white;
+  background: transparent; 
+  color: white;
+  font-size: 14px; 
+  cursor: pointer; 
+}
+
+.footer-bottom {
+  display: flex; 
+  justify-content: space-between;
+  align-items: center; 
+  margin-top: 40px; 
+}
+
+.footer-logo {
+  font-size: 24px; 
+  letter-spacing: -1px; 
+}
+
+@media (max-width: 900px) {
+  .course-card {
+    flex-basis: 45%; 
+  }
+}
+
+@media (max-width: 700px) {
+  .hero-inbox {
+    position: static; 
+    width: auto; 
+    margin: 12px 10px 0;
+  }
+
+  .footer-content,
+  .footer-links {
+    flex-direction: column; 
+  }
+
+  .footer-links {
+    gap: 24px;
+  }
+}
+
+@media (max-width: 520px) {
+  .course-card {
+    flex-basis: 100%; 
+  }
+}
+
+
+

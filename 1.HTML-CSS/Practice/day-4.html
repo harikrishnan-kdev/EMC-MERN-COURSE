@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: grey;
+      }
+      .main-ctn {
+        display: flex;
+      }
+      .left,
+      .right {
+        width: 50%;
+        height: 100px;
+        background-color: rgb(39, 71, 98);
+        border: 1px solid white;
+      }
+
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: aqua;
+        border: 1px solid black;
+      }
+      .main-ctn {
+        position: relative;
+      }
+
+      .box {
+        position: absolute;
+        left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="display: flex; justify-content: center; color: white;">Positioning in Html : relative and absolute</h1>
+    <div class="main-ctn">
+      <div class="left"></div>
+      <div class="right">
+        <div class="box"></div>
+      </div>
+    </div>
+  </body>
+</html>
